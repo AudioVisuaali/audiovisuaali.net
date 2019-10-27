@@ -1,0 +1,79 @@
+h1,
+h3,
+img,
+p {
+  -webkit-filter: drop-shadow(2px 2px 10px #000);
+}
+
+.tile {
+  color: #fff;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.middle {
+  width: 80%;
+  max-width: 800px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.tile img {
+  max-width: 220px;
+}
+
+.tile .inner h1 {
+  margin: 20px 0 0;
+  font-size: 4.2rem;
+  line-height: 110%;
+  font-weight: 400;
+}
+
+.tile .inner p {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 20px 0 30px;
+}
+
+.tile button.button-goto {
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 8px 12px;
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+
+  -webkit-transition: background-color 100ms ease-out;
+  -moz-transition: background-color 100ms ease-out;
+  -o-transition: background-color 100ms ease-out;
+  transition: background-color 100ms ease-out;
+}
+
+.tile button.button-goto:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.tile button.button-goto:disabled,
+.tile button.button-goto:disabled:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: not-allowed;
+}
+
+.tile button.button-goto:active,
+.tile button.button-goto:focus {
+  outline: none;
+}
